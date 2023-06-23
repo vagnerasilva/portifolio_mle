@@ -19,12 +19,12 @@ function Home2() {
               Sobre <span className="purple"> mim  </span>
             </h1>
             <p className="home-about-body">
-              I fell in love with programming and I have at least learnt
-              something, I think… 🤷‍♂️
+              Eu amo programar todos os dias, é minha meta diaria é sempre aprender algo. 
+              Penso que isso deve me levar a algum lugar kkk… 🤷‍♂️
               <br />
-              <br />I am fluent in classics like
+              <br />Sou fluente em algumas linguagens de programação
               <i>
-                <b className="purple"> C++, Javascript and Go. </b>
+                <b className="purple"> Javascript, Python e C. </b>
               </i>
               <br />
               <br />
