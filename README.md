@@ -87,7 +87,11 @@ https://vagnerasilva.github.io/portifolio_mle/
 ref: https://github.com/ph-bicalho/gh-pages-no-react
 
 - Depois de atualizado fazer o comando pra gerar o novo arquivo
-$ npm run deploy
+
+
+  $ npm run deploy
 
 - Atualizando esta na hora da publicacao para atualizar a sua pagina
-$ npm run deploy -- -m "Deploy React app to GitHub Pages"
+  
+  
+  $ npm run deploy -- -m "Deploy React app to GitHub Pages"
