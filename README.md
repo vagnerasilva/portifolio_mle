@@ -77,3 +77,10 @@ Give a ⭐ if you like this website!
 
 
 Testando github pages
+
+
+# Seguir esses passos para deploy da pagina 
+
+https://vagnerasilva.github.io/portifolio_mle/
+
+
