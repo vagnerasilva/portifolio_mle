@@ -1,6 +1,6 @@
 <h2 align="center">
-  Portfolio Website - v2.0<br/>
-  <a href="https://soumyajit.vercel.app/" target="_blank">soumyajit.tech</a>
+  Portfolio Template - v2.0<br/>
+  <a href="https://soumyajit.vercel.app/" target="_blank">https://vagnerasilva.github.io/</a>
 </h2>
 <div align="center">
   <img alt="Demo" src="./Images/readme-img1.png" />
@@ -83,4 +83,11 @@ Testando github pages
 
 https://vagnerasilva.github.io/portifolio_mle/
 
+- como iniciar o repo do zero ( seguir essas instrucoes)
+ref: https://github.com/ph-bicalho/gh-pages-no-react
 
+- Depois de atualizado fazer o comando pra gerar o novo arquivo
+$ npm run deploy
+
+- Atualizando esta na hora da publicacao para atualizar a sua pagina
+$ npm run deploy -- -m "Deploy React app to GitHub Pages"
