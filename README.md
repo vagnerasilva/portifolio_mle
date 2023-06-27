@@ -6,7 +6,7 @@
 ## Template original abaixo
 
 - Caso queira gerar uma versão desta siga as instruções no fim do README
-
+- Ou utilize a referencia do repo origial abaixo.
 
 
 <div align="center">
