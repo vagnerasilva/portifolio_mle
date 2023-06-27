@@ -88,7 +88,7 @@ ref: https://github.com/ph-bicalho/gh-pages-no-react
 
 $ npm run deploy
 
-- Atualizando esta na hora da publicacao para atualizar a sua pagina
+- Atualizando para gerar a publicação na sua pagina
   
   
 $ npm run deploy -- -m "Atualizando pagina"
