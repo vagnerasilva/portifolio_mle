@@ -2,6 +2,13 @@
   Portfolio Template - v2.0<br/>
   <a href="https://vagnerasilva.github.io/portifolio_mle/" target="_blank">vagnerasilva/</a>
 </h2>
+
+## Template original abaixo
+
+- Caso queira gerar uma versão desta siga as instruções no fim do README
+- Ou utilize a referencia do repo origial abaixo.
+
+
 <div align="center">
   <img alt="Demo" src="./Images/readme-img1.png" />
 </div>
@@ -59,28 +66,32 @@ Give a ⭐ if you like this website!
 
 <a href="https://www.buymeacoffee.com/soumyajit4419" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-violet.png" alt="Buy Me A Coffee" height= "60px" width= "217px" ></a>
 
-## development
+## Para desenvolver
 
 - npm run
 
 - npm start
 
-Testando github pages
+Edite os arquivos da template react
 
 
-# Seguir esses passos para deploy da pagina 
 
 https://vagnerasilva.github.io/portifolio_mle/
 
 - como iniciar o repo do zero ( seguir essas instrucoes)
 ref: https://github.com/ph-bicalho/gh-pages-no-react
 
-- Depois de atualizado fazer o comando pra gerar o novo arquivo
 
 
-  $ npm run deploy
 
-- Atualizando esta na hora da publicacao para atualizar a sua pagina
+# Seguir esses passos para deploy da pagina 
+
+$ npm run deploy
+
+- Atualizando para gerar a publicação na sua pagina
   
   
-  $ npm run deploy -- -m "Deploy React app to GitHub Pages"
+$ npm run deploy -- -m "Atualizando pagina"
+
+Depois verifique no pages do seu repo ( no caso o meu site)
+https://vagnerasilva.github.io/portifolio_mle/
