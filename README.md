@@ -86,12 +86,12 @@ ref: https://github.com/ph-bicalho/gh-pages-no-react
 
 # Seguir esses passos para deploy da pagina 
 
-  $ npm run deploy
+$ npm run deploy
 
 - Atualizando esta na hora da publicacao para atualizar a sua pagina
   
   
-  $ npm run deploy -- -m "Atualizando pagina"
+$ npm run deploy -- -m "Atualizando pagina"
 
 Depois verifique no pages do seu repo ( no caso o meu site)
 https://vagnerasilva.github.io/portifolio_mle/
