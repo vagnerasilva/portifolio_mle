@@ -15,7 +15,7 @@ import {
   AiOutlineUser,
 } from "react-icons/ai";
 
-import { CgFileDocument } from "react-icons/cg";
+//import { CgFileDocument } from "react-icons/cg";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -66,7 +66,7 @@ function NavBar() {
                 to="/about"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> About
+                <AiOutlineUser style={{ marginBottom: "2px" }} /> Sobre
               </Nav.Link>
             </Nav.Item>
 
@@ -79,7 +79,7 @@ function NavBar() {
                 <AiOutlineFundProjectionScreen
                   style={{ marginBottom: "2px" }}
                 />{" "}
-                Projects
+                Timeline
               </Nav.Link>
             </Nav.Item>
 
