@@ -16,10 +16,10 @@ function Home2() {
         <Row>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
-              Sobre <span className="purple"> mim  </span>
+              Sobre <span className="purple"> mim </span>
             </h1>
             <p className="home-about-body">
-              Eu amo programar todos os dias, é minha meta diaria é sempre aprender algo. 
+              Eu amo programar todos os dias, é minha meta diária sempre aprender algo. 
               Penso que isso deve me levar a algum lugar kkk… 🤷‍♂️
               <br />
               <br />Sou fluente em algumas linguagens de programação
@@ -30,7 +30,7 @@ function Home2() {
               <br />
               Meu campo de interesses no momento é &nbsp;
               <i>
-                <b className="purple">Machine Learning Engineer </b> e as areas relacionadas
+                <b className="purple">Machine Learning Engineer </b> e as áreas relacionadas
                 a {" "}
                 <b className="purple">
                   MLOPS.
@@ -51,7 +51,7 @@ function Home2() {
           <Col md={12} className="home-about-social">
             <h1>MEUS CONTATOS</h1>
             <p>
-              Feel free to <span className="purple">connect </span>with me
+              Fique à vontade para <span className="purple">se conectar </span>comigo
             </p>
             <ul className="home-about-social-links">
               <li className="social-icons">

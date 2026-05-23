@@ -6,7 +6,7 @@
 ## Template original abaixo
 
 - Caso queira gerar uma versão desta siga as instruções no fim do README
-- Ou utilize a referencia do repo origial abaixo.
+- Ou utilize a referência do repo origial abaixo.
 
 
 <div align="center">
@@ -74,20 +74,20 @@ Edite os arquivos da template react
 
 https://vagnerasilva.github.io/portifolio_mle/
 
-- como iniciar o repo do zero ( seguir essas instrucoes)
+- como iniciar o repo do zero ( seguir essas instruções)
 ref: https://github.com/ph-bicalho/gh-pages-no-react
 
 
 
 
-# Seguir esses passos para deploy da pagina 
+# Seguir esses passos para deploy da página 
 
 $ npm run deploy
 
-- Atualizando para gerar a publicação na sua pagina
+- Atualizando para gerar a publicação na sua página
   
   
-$ npm run deploy -- -m "Atualizando pagina"
+$ npm run deploy -- -m "Atualizando página"
 
 Depois verifique no pages do seu repo ( no caso o meu site)
 https://vagnerasilva.github.io/portifolio_mle/

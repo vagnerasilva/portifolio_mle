@@ -18,7 +18,7 @@ function AboutCard() {
             <br />
             <p style={{ textAlign: "justify" }}>
             No momento, atuo como <span className="purple">Engenheiro de Machine Learning </span>
-            no setor bancario, desenvolvento plataformas e ferramentas de MLOPS para o dia dia dos cientistas de dados.</p>
+            no setor bancário, desenvolvendo plataformas e ferramentas de MLOPS para o dia a dia dos cientistas de dados.</p>
             <br />
             <br />
 

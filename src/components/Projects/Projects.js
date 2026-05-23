@@ -16,7 +16,7 @@ function Projects() {
           Minha Timeline <strong className="purple">profissional </strong>
         </h1>
         <p style={{ color: "white" }}>
-          Uma pequena visao da minhas experiencias de trabalho no formato timeline.
+          Uma pequena visão das minhas experiências de trabalho no formato timeline.
         </p>
 
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
@@ -42,7 +42,7 @@ function Projects() {
             iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
             icon={<SiPython />}
           >
-            <h3 className="vertical-timeline-element-title">Consultor Inteligencia Artificial / Machine Learning Engineer</h3>
+            <h3 className="vertical-timeline-element-title">Consultor Inteligência Artificial / Machine Learning Engineer</h3>
             <h4 className="vertical-timeline-element-subtitle">Accenture</h4>
             <p>
             Consultor de IA no desenvolvimento e implantação de soluções,
@@ -59,7 +59,7 @@ function Projects() {
             iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
             icon={<SiPython />}
           >
-            <h3 className="vertical-timeline-element-title">Analista Inteligencia Artificial/Full-stack Developer</h3>
+            <h3 className="vertical-timeline-element-title">Analista Inteligência Artificial/Full-stack Developer</h3>
             <h4 className="vertical-timeline-element-subtitle">Accenture</h4>
             <p>
                 Desenvolvendo Apps, sites, chatbots e agentes conversacionais.
@@ -75,7 +75,7 @@ function Projects() {
             <h3 className="vertical-timeline-element-title">Front End Developer</h3>
             <h4 className="vertical-timeline-element-subtitle">Accenture</h4>
             <p>
-              Desenvolvimento de paginas e aplicativos hibridos.
+              Desenvolvimento de páginas e aplicativos hibridos.
             </p>
           </VerticalTimelineElement>
 
@@ -92,7 +92,7 @@ function Projects() {
             <h4 className="vertical-timeline-element-subtitle">Mastertech</h4>
             <p>
                 Auxiliar de professores de programação, ajudando no desenvolvimento e apoio dos alunos
-                em conteudos FrontEnd, BackEnd, desnvolvimento de conteudos em aulas.
+                em conteúdos FrontEnd, BackEnd, desenvolvimento de conteúdos em aulas.
             </p>
           </VerticalTimelineElement>
 
@@ -106,7 +106,7 @@ function Projects() {
             <h4 className="vertical-timeline-element-subtitle">Microsurvey</h4>
             <p>
             Gerenciamento e coordenação das frentes de trabalho,
-            em aquisição geofisica de aerolevantamento. Controle de qualidade de dados
+            em aquisição geofísica de aerolevantamento. Controle de qualidade de dados
             adquiridos e relatórios para os clientes.
             </p>
           </VerticalTimelineElement>
