@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FaComment, FaTimes, FaPaperPlane } from "react-icons/fa";
+import focaIcon from "../Assets/foca-clean.png";
 import "./FloatingChat.css";
 
 function FloatingChat() {
@@ -48,11 +49,15 @@ function FloatingChat() {
     setIsOpen(!isOpen);
   };
 
+  const getButtonClassName = () => {
+    return isOpen ? "floating-chat-button" : "floating-chat-button attention-pulse";
+  };
+
   return (
     <div className="floating-chat-container">
       {/* Botão flutuante */}
       <button
-        className="floating-chat-button"
+        className={getButtonClassName()}
         onClick={toggleChat}
         title={isOpen ? "Fechar chat" : "Abrir chat"}
       >
@@ -68,7 +73,14 @@ function FloatingChat() {
         <div className="floating-chat-panel">
           {/* Cabeçalho */}
           <div className="chat-header">
-            <h3>Chat Rápido</h3>
+            <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+              <img 
+                src={focaIcon} 
+                alt="FocaBot" 
+                style={{ height: "24px", width: "24px" }}
+              />
+              <h3>Chat sobre o Vagner</h3>
+            </div>
             <button
               className="close-button"
               onClick={toggleChat}
@@ -82,7 +94,7 @@ function FloatingChat() {
           <div className="messages-container">
             {messages.length === 0 ? (
               <div className="empty-message">
-                <p>Olá! Escreva algo para começar. 👋</p>
+                <p>Olá! Estou aqui para falar sobre o Vagner! , pode me perguntar qualquer coisa. 👋</p>
               </div>
             ) : (
               messages.map((msg) => (
@@ -90,6 +102,14 @@ function FloatingChat() {
                   key={msg.id}
                   className={`message ${msg.sender === "user" ? "user-message" : "bot-message"}`}
                 >
+                  {msg.sender === "bot" && (
+                    <img 
+                      src={focaIcon} 
+                      alt="FocaBot" 
+                      className="bot-icon" 
+                      title="FocaBot - Seu assistente inteligente"
+                    />
+                  )}
                   <div className="message-content">
                     <p>{msg.text}</p>
                   </div>

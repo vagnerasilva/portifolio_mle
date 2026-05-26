@@ -28,6 +28,20 @@ function Home() {
               <div style={{ padding: 50, textAlign: "left" }}>
                 <Type />
               </div>
+
+              <p style={{ 
+                fontSize: "1.1em",
+                color: "rgba(255, 255, 255, 0.85)",
+                marginTop: "20px",
+                paddingLeft: "50px",
+                lineHeight: "1.6"
+              }}>
+                Para mais informações sobre minha experiência, projetos e expertise,
+                <strong style={{ color: "#c770f0", marginLeft: "5px" }}>
+                  converse com o FocaBot
+                </strong>
+                {" "}no chat abaixo! 💬
+              </p>
             </Col>
 
             <Col md={5} style={{ paddingBottom: 20 }}>

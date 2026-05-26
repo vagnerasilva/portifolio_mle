@@ -32,6 +32,24 @@
   transform: scale(0.95);
 }
 
+/* Animação de destaque - pulse */
+.floating-chat-button.attention-pulse {
+  animation: pulse-glow 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4),
+                0 0 0 0 rgba(102, 126, 234, 0.7);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.6),
+                0 0 0 10px rgba(102, 126, 234, 0);
+    transform: scale(1.02);
+  }
+}
+
 /* Painel do chat */
 .floating-chat-panel {
   position: absolute;
@@ -122,8 +140,10 @@
 .message {
   display: flex;
   animation: fadeIn 0.3s ease-out;
+  
+  align-items: flex-end;
+  gap: 8px;
 }
-
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -141,6 +161,25 @@
 
 .bot-message {
   justify-content: flex-start;
+}
+
+/* Ícone do FocaBot ao lado da mensagem do bot */
+.bot-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-left: 4px;
+  margin-right: 6px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.12);
+}
+
+/* Ajustes finos de espaçamento entre ícone e bolha */
+.bot-message .message-content {
+  margin-left: 4px;
+}
+.user-message .message-content {
+  margin-right: 4px;
 }
 
 .message-content {

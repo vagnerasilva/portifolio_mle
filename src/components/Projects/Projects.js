@@ -3,11 +3,20 @@ import { Container, Row } from "react-bootstrap";
 import Particle from "../Particle";
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
+import './Projects.css';
 import {
   SiPython,
 } from "react-icons/si";
 
 function Projects() {
+  // Cores do tema alternadas para visual mais interessante
+  const timelineColors = [
+    { bg: '#623686', border: '#be50f4', shadow: 'rgba(98, 54, 134, 0.5)' },
+    { bg: '#8a49a8', border: '#c770f0', shadow: 'rgba(198, 112, 240, 0.3)' },
+  ];
+
+  const getColorByIndex = (index) => timelineColors[index % timelineColors.length];
+
   return (
     <Container fluid className="project-section">
       <Particle />
@@ -22,11 +31,21 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
         <VerticalTimeline>
           <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-            contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+            className="vertical-timeline-element--work timeline-element-custom"
+            contentStyle={{ 
+              background: getColorByIndex(0).bg, 
+              color: '#fff',
+              boxShadow: `0 4px 10px ${getColorByIndex(0).shadow}`
+            }}
+            contentArrowStyle={{ borderRight: `7px solid ${getColorByIndex(0).bg}` }}
             date="07/2021 - Até o momento"
-            iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+            dateClassName="timeline-date"
+            iconStyle={{ 
+              background: getColorByIndex(0).bg, 
+              color: '#fff',
+              boxShadow: `0 0 0 4px rgba(199, 112, 240, 0.3)`,
+              border: `2px solid ${getColorByIndex(0).border}`
+            }}
             icon={<SiPython />}
           >
             <h3 className="vertical-timeline-element-title">Machine Learning Engineer</h3>
@@ -37,9 +56,21 @@ function Projects() {
           </VerticalTimelineElement>
           
           <VerticalTimelineElement
-            className="vertical-timeline-element--work"
+            className="vertical-timeline-element--work timeline-element-custom"
+            contentStyle={{ 
+              background: getColorByIndex(1).bg,
+              color: '#fff',
+              boxShadow: `0 4px 10px ${getColorByIndex(1).shadow}`
+            }}
+            contentArrowStyle={{ borderRight: `7px solid ${getColorByIndex(1).bg}` }}
             date="01-2020 - 07-2021"
-            iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+            dateClassName="timeline-date"
+            iconStyle={{ 
+              background: getColorByIndex(1).bg, 
+              color: '#fff',
+              boxShadow: `0 0 0 4px rgba(199, 112, 240, 0.3)`,
+              border: `2px solid ${getColorByIndex(1).border}`
+            }}
             icon={<SiPython />}
           >
             <h3 className="vertical-timeline-element-title">Consultor Inteligência Artificial / Machine Learning Engineer</h3>
@@ -52,11 +83,21 @@ function Projects() {
           </VerticalTimelineElement>
 
           <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-            contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+            className="vertical-timeline-element--work timeline-element-custom"
+            contentStyle={{ 
+              background: getColorByIndex(0).bg,
+              color: '#fff',
+              boxShadow: `0 4px 10px ${getColorByIndex(0).shadow}`
+            }}
+            contentArrowStyle={{ borderRight: `7px solid ${getColorByIndex(0).bg}` }}
             date="01-2018 - 12-2019"
-            iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+            dateClassName="timeline-date"
+            iconStyle={{ 
+              background: getColorByIndex(0).bg, 
+              color: '#fff',
+              boxShadow: `0 0 0 4px rgba(199, 112, 240, 0.3)`,
+              border: `2px solid ${getColorByIndex(0).border}`
+            }}
             icon={<SiPython />}
           >
             <h3 className="vertical-timeline-element-title">Analista Inteligência Artificial/Full-stack Developer</h3>
@@ -67,9 +108,21 @@ function Projects() {
           </VerticalTimelineElement>
 
           <VerticalTimelineElement
-            className="vertical-timeline-element--work"
+            className="vertical-timeline-element--work timeline-element-custom"
+            contentStyle={{ 
+              background: getColorByIndex(1).bg,
+              color: '#fff',
+              boxShadow: `0 4px 10px ${getColorByIndex(1).shadow}`
+            }}
+            contentArrowStyle={{ borderRight: `7px solid ${getColorByIndex(1).bg}` }}
             date="11-2016 - 12-2017"
-            iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+            dateClassName="timeline-date"
+            iconStyle={{ 
+              background: getColorByIndex(1).bg, 
+              color: '#fff',
+              boxShadow: `0 0 0 4px rgba(199, 112, 240, 0.3)`,
+              border: `2px solid ${getColorByIndex(1).border}`
+            }}
             icon={<SiPython />}
           >
             <h3 className="vertical-timeline-element-title">Front End Developer</h3>
@@ -81,11 +134,21 @@ function Projects() {
 
 
           <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-            contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+            className="vertical-timeline-element--work timeline-element-custom"
+            contentStyle={{ 
+              background: getColorByIndex(0).bg,
+              color: '#fff',
+              boxShadow: `0 4px 10px ${getColorByIndex(0).shadow}`
+            }}
+            contentArrowStyle={{ borderRight: `7px solid ${getColorByIndex(0).bg}` }}
             date="07-2016 - 12-2018"
-            iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+            dateClassName="timeline-date"
+            iconStyle={{ 
+              background: getColorByIndex(0).bg, 
+              color: '#fff',
+              boxShadow: `0 0 0 4px rgba(199, 112, 240, 0.3)`,
+              border: `2px solid ${getColorByIndex(0).border}`
+            }}
             icon={<SiPython />}
           >
             <h3 className="vertical-timeline-element-title">Ninja (Monitor de apoio)</h3>
@@ -97,9 +160,47 @@ function Projects() {
           </VerticalTimelineElement>
 
           <VerticalTimelineElement
-            className="vertical-timeline-element--work"
+            className="vertical-timeline-element--work timeline-element-custom"
+            contentStyle={{ 
+              background: getColorByIndex(1).bg,
+              color: '#fff',
+              boxShadow: `0 4px 10px ${getColorByIndex(1).shadow}`
+            }}
+            contentArrowStyle={{ borderRight: `7px solid ${getColorByIndex(1).bg}` }}
             date="11-2016 - 12-2017"
-            iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+            dateClassName="timeline-date"
+            iconStyle={{ 
+              background: getColorByIndex(1).bg, 
+              color: '#fff',
+              boxShadow: `0 0 0 4px rgba(199, 112, 240, 0.3)`,
+              border: `2px solid ${getColorByIndex(1).border}`
+            }}
+            icon={<SiPython />}
+          >
+            <h3 className="vertical-timeline-element-title">Ninja (Monitor de apoio)</h3>
+            <h4 className="vertical-timeline-element-subtitle">Mastertech</h4>
+            <p>
+                Auxiliar de professores de programação, ajudando no desenvolvimento e apoio dos alunos
+                em conteúdos FrontEnd, BackEnd, desenvolvimento de conteúdos em aulas.
+            </p>
+          </VerticalTimelineElement>
+
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work timeline-element-custom"
+            contentStyle={{ 
+              background: getColorByIndex(0).bg,
+              color: '#fff',
+              boxShadow: `0 4px 10px ${getColorByIndex(0).shadow}`
+            }}
+            contentArrowStyle={{ borderRight: `7px solid ${getColorByIndex(0).bg}` }}
+            date="11-2016 - 12-2017"
+            dateClassName="timeline-date"
+            iconStyle={{ 
+              background: getColorByIndex(0).bg, 
+              color: '#fff',
+              boxShadow: `0 0 0 4px rgba(199, 112, 240, 0.3)`,
+              border: `2px solid ${getColorByIndex(0).border}`
+            }}
             icon={<SiPython />}
           >
             <h3 className="vertical-timeline-element-title">Geofísico sênior</h3>
